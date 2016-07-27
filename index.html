@@ -7,7 +7,8 @@
 <body>
     <h3>CatList: </h3>
     <ul id="cat-list" data-bind="foreach: catList">
-      <li data-bind="text: $data.name"></li>
+      <li data-bind="click: $parent.setCurrentCat, text: $data.name"></li>
+      <!-- From the video instruction, you can use "text: name", no necessary for $data, interesting  -->
     </ul>
     <div data-bind="with:currentCat">
       <div id="cat">

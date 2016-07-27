@@ -91,6 +91,15 @@ var ViewModel = function(){
   this.incrementCounter = function(){
     self.currentCat().clickCount(self.currentCat().clickCount()+1);
   };
+
+  this.setCurrentCat = function(clickedCat){
+    self.currentCat(clickedCat);
+
+    // console.log("hi");
+    // Really useful debug trick
+  }
+
+
 }
 
 ko.applyBindings(new ViewModel());
