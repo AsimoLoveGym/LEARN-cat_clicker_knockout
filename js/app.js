@@ -71,6 +71,11 @@ var Cat = function(data){
   // The ",this" is important!
 }
 
+// TODO:
+// a. Check, Make the cats list show up in a list
+// b. make the html catList clickable and render the corresponding images.
+
+
 var ViewModel = function(){
   var self = this;
 
@@ -80,7 +85,7 @@ var ViewModel = function(){
     self.catList.push(new Cat(catItem));
   });
 
-  console.log(this.catList());
+  // console.log(this.catList());
 
   this.currentCat = ko.observable(this.catList()[0]);
   this.incrementCounter = function(){
